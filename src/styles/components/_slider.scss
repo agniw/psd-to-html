@@ -1,0 +1,23 @@
+.glide {
+  &__arrows {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    left: -20px;
+    right: -20px;
+  }
+
+  &__arrow {
+    background-color: transparent;
+    border: none;
+  }
+
+  &__slides {
+    align-items: stretch;
+  }
+
+  &__slide {
+    height: auto;
+  }
+}

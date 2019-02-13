@@ -1,0 +1,8 @@
+.header {
+  background-color: $white;
+  height: 8.6rem;
+
+  @include breakpoint-md {
+    height: 6rem;
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "psd-to-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {
+    "scss": "node-sass --output-style compressed -o public/styles src/styles",
+    "scss:watch": "npm run scss && npm run scss -- -w"
+  },
+  "author": "Agnieszka Wojsznis",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "stylelint-config-standard": "^18.2.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.2.6"
+  }
+}
