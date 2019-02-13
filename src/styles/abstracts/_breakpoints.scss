@@ -2,6 +2,13 @@
 $xsmall: 479px;
 $small: 767px;
 $medium: 991px;
+$large: 1124px;
+
+@mixin breakpoint-xsm {
+  @media (max-width: $xsmall) {
+    @content;
+  }
+}
 
 @mixin breakpoint-sm {
   @media (max-width: $small) {
@@ -15,8 +22,8 @@ $medium: 991px;
   }
 }
 
-@mixin breakpoint-xsm {
-  @media (max-width: $xsmall) {
+@mixin breakpoint-l {
+  @media (max-width: $large) {
     @content;
   }
 }

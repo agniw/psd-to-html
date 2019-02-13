@@ -1,0 +1,13 @@
+.boxes-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  @include breakpoint-sm {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include breakpoint-xsm {
+    grid-template-columns: 1fr;
+  }
+}

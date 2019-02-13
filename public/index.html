@@ -1,114 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="IE=edge"
-  >
-  <title> psd to html </title>
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1"
-  >
-  <link
-    href="https://fonts.googleapis.com/css?family=Rubik:300,400"
-    rel="stylesheet"
-  >
-  <link
-    rel="stylesheet"
-    type="text/css"
-    media="screen"
-    href="styles/main.css"
-  />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <img src="https://via.placeholder.com/160x40" alt="">
-    </div>
-  </header>
-  <main>
-    <section class="section section-blue section-dot">
-      <div class="container">
-        <h2 class="h2 section__header section__header-white"> Heading </h2>
-        <p class="section__subheader section__subheader-white"> Lorem ipsum dolor sit amet, consect etur adipiscing
-          elit. </p>
-        <div class="glide">
-          <div
-            data-glide-el="track"
-            class="glide__track"
-          >
-            <ul class="glide__slides">
-              <li class="glide__slide">
-                <div class="box">
-                  <h4 class="h4"> Heading </h4>
-                  <p class="box__text"> Lorem ipsum dolor sit amet </p>
-                  <img src="https://via.placeholder.com/45">
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="box">
-                  <h4 class="h4"> Heading </h4>
-                  <p class="box__text"> Lorem ipsum dolor sit amet, consect
-                  etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus. </p>
-                </div>
-              </li>
-              <li class="glide__slide">
-                <div class="box">
-                  <h4 class="h4"> Ultra Mega Super Long Heading </h4>
-                  <p class="box__text"> Lorem ipsum dolor sit amet, consect
-                  etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div
-            class="glide__arrows"
-            data-glide-el="controls"
-          >
-            <button
-              class="glide__arrow glide__arrow--left"
-              data-glide-dir="<"
-            > next
-          
-        </button>
-            <button 
-              class="glide__arrow glide__arrow--right"
-              data-glide-dir=">"
-            > prev
-          </button>
+  <head>
+    <meta charset="utf-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Psd to html </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <img class="header__logo" src="images/logo.svg" alt="logo">
+      </div>
+    </header>
+    <main>
+      <section class="section section-blue section-dot">
+        <div class="container">
+          <h2 class="h2 section__header section__header-white"> Heading </h2>
+          <p class="section__subheader section__subheader-white"> Lorem ipsum dolor sit amet, consect etur adipiscingelit. </p>
+          <div id="slider" class="glide">
+            <div data-glide-el="track" class="glide__track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <div class="box">
+                    <h4 class="h4"> Heading </h4>
+                    <p class="box__text"> Lorem ipsum dolor sit amet </p>
+                    <img src="images/pic1.svg" alt="pic1">
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="box">
+                    <h4 class="h4"> Heading </h4>
+                    <p class="box__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus. </p>
+                  </div>
+                </li>
+                <li class="glide__slide">
+                  <div class="box">
+                    <h4 class="h4"> Ultra Mega Super Long Heading </h4>
+                    <p class="box__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<"> 
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="21px" height="40px">
+                  <path fill-rule="evenodd" fill="rgb(40, 169, 224)"
+                    d="M2.709,19.993 L20.673,38.067 C21.102,38.482 21.123,39.177 20.719,39.618 C20.704,39.634 20.689,39.650 20.673,39.665 C20.228,40.095 19.534,40.095 19.089,39.665 L0.318,20.792 C-0.101,20.347 -0.101,19.640 0.318,19.194 L19.089,0.352 C19.296,0.141 19.574,0.020 19.866,0.014 C20.168,0.014 20.457,0.135 20.673,0.352 C21.102,0.767 21.123,1.462 20.719,1.903 C20.704,1.919 20.689,1.935 20.673,1.950 L2.709,19.993 Z" />
+                </svg>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">"> 
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="22px" height="40px">
+                  <path fill-rule="evenodd" fill="rgb(40, 169, 224)"
+                    d="M19.277,19.983 L1.287,38.070 C0.857,38.486 0.836,39.181 1.241,39.623 C1.256,39.639 1.271,39.655 1.287,39.670 C1.732,40.101 2.427,40.101 2.873,39.670 L21.672,20.782 C22.092,20.336 22.092,19.629 21.672,19.183 L2.873,0.326 C2.666,0.115 2.387,-0.006 2.095,-0.012 C1.793,-0.012 1.503,0.109 1.287,0.326 C0.857,0.742 0.836,1.437 1.241,1.878 C1.256,1.895 1.271,1.910 1.287,1.926 L19.277,19.983 Z"
+                  />
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="section section-grey">
-      <div class="container">
-        <h2 class="h2 section__header"> Heading </h2>
-        <p class="section__subheader"> Lorem ipsum dolor sit amet, consect etur adipiscing elit. </p>
-        <h3 class="h3"> Heading </h3>
-        <div class="grid">
-          <div class="box">
-          <h4 class="h4"> Heading </h4>
-            <p class="box__text"> Lorem ipsum dolor sit amet </p>
-            <img src="https://via.placeholder.com/45">
-          </div>
-          <div class="box">
-            <h4 class="h4"> Heading </h4>
-            <p class="box__text"> Lorem ipsum dolor sit amet, consect
-              etur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus. </p>
-          </div>
-          <div class="box">
-            <h4 class="h4"> Ultra Mega Super Long Heading </h4>
-            <p class="box__text"> Lorem ipsum dolor sit amet, consect
-              etur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet </p>
+      </section>
+      <section class="section section-grey">
+        <div class="container">
+          <h2 class="h2 section__header"> Heading </h2>
+          <p class="section__subheader"> Lorem ipsum dolor sit amet, consect etur adipiscing elit. </p>
+          <h3 class="h3"> Heading </h3>
+          <div class="boxes-list">
+            <div class="box">
+              <h4 class="h4"> Heading </h4>
+              <p class="box__text"> Lorem ipsum dolor sit amet </p>
+              <img src="images/pic2.svg" alt="pic2">
+            </div>
+            <div class="box">
+              <h4 class="h4"> Heading </h4>
+              <p class="box__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea uismod bibendum laoreet. Proin gravida dolor sit amet lacus. </p>
+            </div>
+            <div class="box">
+              <h4 class="h4"> Ultra Mega Super Long Heading </h4>
+              <p class="box__text"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea uismod bibendum laoreet. Lorem ipsum dolor sit amet </p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="../src/script/main.js"></script>
-</body>
+      </section>
+    </main>
+    <script src="../node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <script src="script/main.min.js"></script>
+  </body>
 </html>

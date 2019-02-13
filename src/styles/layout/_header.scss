@@ -5,4 +5,19 @@
   @include breakpoint-md {
     height: 6rem;
   }
+
+  &__container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0 6rem;
+    box-sizing: content-box;
+    position: relative;
+  }
+
+  &__logo {
+    height: 3.8rem;
+    position: absolute;
+    left: 1rem;
+  }
 }

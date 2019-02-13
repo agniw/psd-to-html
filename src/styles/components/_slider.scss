@@ -1,16 +1,30 @@
 .glide {
   &__arrows {
     position: absolute;
-    top: 50%;
+    top: calc(50% - 20px);
     display: flex;
     justify-content: space-between;
-    left: -20px;
-    right: -20px;
+    left: -4rem;
+    right: -4rem;
+
+    @include breakpoint-xsm {
+      display: none;
+    }
+
+    @include breakpoint-l {
+      left: -1.5rem;
+      right: -1.5rem;
+    }
   }
 
   &__arrow {
     background-color: transparent;
     border: none;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__slides {

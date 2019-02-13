@@ -19,7 +19,7 @@
   &-dot {
     &::after {
       content: "";
-      position: absolute; //dodac tu zmienna do wys i szer
+      position: absolute;
       bottom: -1.5rem;
       left: calc(50% - 1.5rem);
       width: 3rem;
